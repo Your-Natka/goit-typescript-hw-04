@@ -19,11 +19,11 @@ export function Observer({ children, onContentEndVisible }: Props) {
     }
     const options = new Options("0px", 1.0, null);
 
-    const options = {
-      rootMargin: "0px",
-      threshold: 1.0,
-      root: null,
-    };
+    // const options = {
+    //   rootMargin: "0px",
+    //   threshold: 1.0,
+    //   root: null,
+    // };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
